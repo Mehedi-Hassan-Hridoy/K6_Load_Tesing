@@ -1,0 +1,13 @@
+{
+  "name": "k6_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sampleTest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stress_test": "k6.exe run tests/stressTest.js",
+    "stress_test:dashboard": "k6.exe run --out dashboard tests/stressTest.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
