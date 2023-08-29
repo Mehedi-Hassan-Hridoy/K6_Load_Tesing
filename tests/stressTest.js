@@ -6,8 +6,8 @@ import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporte
 export const options = {
   
   thresholds: {
-    'http_req_duration': ['p(95)<3000'], 
-    'http_req_failed': ['rate<0.01'],
+    'http_req_duration': ['p(95)<3000'], // 95% of requests should complete within 3000ms
+    'http_req_failed': ['rate<0.01'],    // Failed requests should be less than 1%
   },
   scenarios: {
     stressTest: {
